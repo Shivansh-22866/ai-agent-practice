@@ -16,3 +16,8 @@ source .flight-agent/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+4. Create the environment file
+```bash
+cp .env.example .env
+```

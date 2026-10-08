@@ -1,2 +1,3 @@
 .flight-agent
 __pycache__
+.env
