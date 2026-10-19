@@ -2,7 +2,7 @@ from tools.tavily_tool import tavily_search
 from tools.flight_tool import search_flights
 from backend import run_travel_agent
 import asyncio
-from mcp_client_test import get_all_tools
+from mcp_client_test import get_all_tools, tavily_mcp_search
 
 # res = tavily_search("Cheapest flights in Bangalore")
 # print(res)
@@ -18,4 +18,5 @@ from mcp_client_test import get_all_tools
 # )
 # print(res["answer"])
 
-asyncio.run(get_all_tools())
+# asyncio.run(get_all_tools())
+asyncio.run(tavily_mcp_search("Cheapest flights in Bangalore"))
